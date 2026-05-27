@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/CRIMSON\ HOME\ 1300.jpg);
+    background-size: 20vw;
+}
+
+h1 {
+    font-family: 'Papyrus', 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 3rem;
+}
+
+p {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: chartreuse;
+    width: 50%;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+}
+
+.content img {
+    float: right;
+}
+
+.container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    border: yellow 4px solid;
+    margin-left: 1rem;
+    display: inline-block;
+    padding-right: 2rem;
+}
+
+.nav-secondary {
+    border: cyan 4px solid;
+    float: right;
+    padding-right: 2rem;
+}
+
+.nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-secondary li {
+    list-style: none;
+    display: block;
+    margin-top: 2rem;
+    gap: 24px;
+}
+
+.link {
+    font-weight: bold;
+    text-decoration: none;
+    background-color: cyan;
+    padding: 8px 24px 8px 24px;
+    border: green 2px solid;
+    width: 150px;
+    text-align: center;
+    display: inline-block;
+}
+
+#title {
+    background-color: chartreuse;
+}
+
+.marquee-wrap {
+    background-color:aqua;
+    overflow: hidden;
+    border-top: 0.5px solid var(--color-border-tertiary);
+    border-bottom: 0.5px solid var(--color-border-tertiary);
+    padding: 1.25rem 0;
+    margin: 2rem 0;
+    white-space: nowrap;
+}
+.marquee-track {
+    display: inline-block;
+    animation: scroll 8s linear infinite;
+}
+.marquee-track span {
+    font-family: var(--font-mono);
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: var(--color-text-primary);
+    text-transform: uppercase;
+    padding: 0 2.5rem;
+}
+.marquee-track span.dim {
+    color: var(--color-text-tertiary);
+}
+@keyframes scroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
